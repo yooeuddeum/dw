@@ -21,6 +21,19 @@ target="_self " = 현재창에서 열림
 예시 <audio controls src="XXX.mp4" alt="XXX" />
 form 태그 = 데이터를 웹 서버 등으로 전송할 때 사용하는 태그
 input = 싱글태그 (placeholder=이름을 입력해주세요.)
-예시 input type submit value (버튼 , 리셋 , 서브밋)  
+예시 input type submit value (버튼 , 리셋 , 서브밋)
+외부 스타일 시트(external) = <link type="text/css" rel="stylesheet" href="mystyle.css">
+내부 스타일 시트(internal) = h1 { color: red; } , p { color: #0026ff; }
+인라인 스타일 시트(inline) = <h1 style="color: red">This is a headline.</h1>
+                            <p style="color: #0026ff">This is a paragraph.</p>
+타입 선택자 : h1 
+전체 선택자 : *
+아이디 선택자 : #
+클래스 선택자 : .
+s1 s2 = s1 요소에 포함된 s2 요소를 선택 (후손관계)
+s1 > s2 = s1 요소의 직계 자식 요소인 s2를 선택 (자식관계)
+
+
+
 
 
