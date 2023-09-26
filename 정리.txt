@@ -1,0 +1,26 @@
+텍스트 기울임을 넣고 싶을 때 = <i> , <em>
+블록태그(p태그,h1~h6,) = p 태그 내부에 인라인 태그는 중첩이 허용
+인라인태그(span태그) 
+텍스트를 굵게 하고 싶을 때 = b태그 srtong태그
+텍스트 안에 밑줄을 표현할 때 =ins 태그
+텍스트 중앙에 취소선을 표현할 때 = del 태그
+리스트 태그 - 목록을 생성하는 블록 태그
+ul 태그 :순서가 없는 리스트 - li 태그 사용
+ol 태그 :순서가 있는 리스트 - li 태그 사용
+
+웹 문서에서 링크를 생성할 때 = 인라인 태그 ( a href 태그)
+예) <a href="https://naver.com" target="_blank","_self>네이버로 이동하기</a> 
+target="_blank" = 연결된 웹 페이지가 새 창 or 새 탭으로 열림 
+target="_self " = 현재창에서 열림
+이미지 태그 = <img src="경로" alt="코멘트"
+예시 <img width="200px;" height="300px;" src="XXX.jpeg" alt="XXX" />
+비디오 태그
+예시 <video controls width="200px;" height="300px;" src="XXX.mp4" alt="XXX" />
+비디오 자동재생하는 기능 >autoplay
+오디오 태그
+예시 <audio controls src="XXX.mp4" alt="XXX" />
+form 태그 = 데이터를 웹 서버 등으로 전송할 때 사용하는 태그
+input = 싱글태그 (placeholder=이름을 입력해주세요.)
+예시 input type submit value (버튼 , 리셋 , 서브밋)  
+
+
