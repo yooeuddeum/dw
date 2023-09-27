@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        height: 200px;
+        border: 10px dashed black;
+        padding: 20px;
+        background: yellow;
+    }
+    h1 {
+        color: red;
+    }
+    #origin {
+        background-repeat: no-repeat;
+    }
+    #padding {
+        background-repeat: no-repeat;
+        background-clip: padding-box;
+    }
+    #content {
+        background-repeat: no-repeat;
+        background-clip: content-box;
+    }
+</style>
+<body>
+    <div id="padding">
+        <h1>padding-box</h1>
+    <p>삶이 그대를 속일지라도
+       슬퍼하거나 노하지 말아라...
+       지나가 버린 것 그리움이 되리니.
+    </p><br>
+    </div><br>
+    <div id="content">
+        <h1>content-box</h1>
+    <p>삶이 그대를 속일지라도
+       슬퍼하거나 노하지 말아라...
+       지나가 버린 것 그리움이 되리니.
+    </p><br>
+    </div><br>
+    <div id="origin">
+        <h1>borde-box</h1>
+    <p>삶이 그대를 속일지라도
+       슬퍼하거나 노하지 말아라...
+       지나가 버린 것 그리움이 되리니.
+    </p><br>
+    </div>
+    
+</body>
+</html>
