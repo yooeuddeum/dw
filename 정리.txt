@@ -1,3 +1,8 @@
+<h1>, <p>, <ul>, <li>, <table>, <blockquote>,
+<pre>, <div> <form> , <header>, <nav> 블럭요소
+------------------------------------------------------------- 
+<a>, <img>, <strong>, <em>, <br>, <input>, <span> 인라인 요소
+-------------------------------------------------------------
 텍스트 기울임을 넣고 싶을 때 = <i> , <em>
 블록태그(p태그,h1~h6,) = p 태그 내부에 인라인 태그는 중첩이 허용
 인라인태그(span태그) 
@@ -40,6 +45,30 @@ s1 s2 = s1 요소에 포함된 s2 요소를 선택 (후손관계)
 s1 > s2 = s1 요소의 직계 자식 요소인 s2를 선택 (자식관계)
 
 absolute : 상위요소 기준
+static
+relative
+fixed
+sticky
+
+display:block : 블록(block)
+display:inline : 인라인(inline)
+display:none : 없는 것으로 간주됨 : 화면에 나타나지 않음 
+visibility:hidden : 화면에서 감춰짐
+
+정적 위치 설정(static positioning) - 
+기본값. 요소를 일반적인 문서의 흐름에 따라 배치한다.
+
+상대 위치 설정(relative positioning) - 
+일반적인 문서의 흐름에 따라 배치하되, 상하좌우 위치 값에 따라 오프셋을 적용한다. 
+
+절대 위치 설정(absolute positioning) - 
+일반적인 문서 흐름에서 제거하고, 가장 가까운 position 지정 요소에 대해 상대적으로 오프셋을 적용한다
+(없을 경우, 브라우저를 기준으로 한다.)
+
+고정 위치 설정(fixed positioning) -
+ 일반적인 문서 흐름대로 움직이다가, 지정한 위치에 고정된다.
+
+
 
 
 
