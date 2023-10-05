@@ -45,10 +45,10 @@ s1 s2 = s1 요소에 포함된 s2 요소를 선택 (후손관계)
 s1 > s2 = s1 요소의 직계 자식 요소인 s2를 선택 (자식관계)
 
 absolute : 상위요소 기준
-static
-relative
-fixed
-sticky
+static - 블록 요소들은 박스처럼 상하로 쌓이게 되고 인라인 요소들은 한 줄에 차례대로 배치
+relative - 정상적인 위치에서 상대적으로 요소가 배치
+fixed - 브라우저 윈도우에 상대적으로 요소의 위치를 잡는 것
+sticky - 스크롤 내리다 fixed가 됌
 
 display:block : 블록(block)
 display:inline : 인라인(inline)
@@ -67,6 +67,24 @@ visibility:hidden : 화면에서 감춰짐
 
 고정 위치 설정(fixed positioning) -
  일반적인 문서 흐름대로 움직이다가, 지정한 위치에 고정된다.
+
+ style="clear: both" = 지정하면 빈칸을 채우지 않고 정삭적으로 배치
+ float = 하나의 콘텐츠 주위로 다른 콘텐츠들이 물처럼 흘러가는 스타일 지정
+ z-index = 요소의 스택 순서를 지정
+ opacity = 반투명 효과 (1에 가까워질수록 선명)
+
+ rgb 색상으로 opacity도 값을 줄 수 있음
+ 
+overflow 속성: 자식 요소가 부모 요소의 범위를 벗어났을 때, 어떻게 처리할 것인지를 지정
+
+hidden – 부모 영역을 벗어나는 부분을 보이지 않게 한다. 
+scroll – 
+      부모 영역을 벗어나는 부분을 스크롤 할 수 있도록 한다./안한다
+             
+auto – 자동으로 스크롤 바가 나타난다.
+          –생길수도 있고  안생길수 도 있다 
+
+
 
 
 
