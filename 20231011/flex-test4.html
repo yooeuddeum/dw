@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex,nth-child,order</title>
+</head>
+<style>
+     * {
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0px;
+    }
+    ul {
+        display: flex;
+        list-style-type: none;
+        border: 5px solid red;
+        padding: 0;
+        height: 300px;
+        font-size: 34px;
+    }
+    li {
+        background-color: beige;
+    }
+    li:nth-child(2n) {
+        background-color: coral;
+    }
+    li:nth-child(2) {
+        /* flex-grow: 1;
+        flex-shrink: 3; */
+        flex: 0 1 200px;
+    }   
+    /* li:nth-child(3) {
+        flex-grow: 2;
+        flex-shrink: 3;
+    } */
+    li:nth-child(1){
+        order: 5;
+    }
+    li:nth-child(2){
+        order: 4;
+    }
+    li:nth-child(3){
+        order: 3;
+    }
+    li:nth-child(4){
+        order: 2;
+    }
+    li:nth-child(5){
+        order: 1;
+    }
+</style>
+<body>
+    <ul>
+        <li>거북이</li>
+        <li>호랑이</li>
+        <li>고양이</li>
+        <li>강아지</li>
+        <li>고라니</li>
+    </ul>
+    
+</body>
+</html>
