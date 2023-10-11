@@ -97,6 +97,13 @@ display: flex; 사용할때
 align-items: center; 수직 정렬
 justify-content: center; 수평 정렬
 
+display: flex; 주축 기준으로 가로로 정렬
+list-style-type: none; 마커나 번호를 제거할때 쓰는 스타일링
+flex-direction: row-reverse; 플렉스 컨테이너 기준 오른쪽부터 시작하는 가로축 (역방향)
+flex-direction: row; 왼쪽부터 시작하는 가로축 (정방향)
+flex-direction: column; 세로정렬
+flex-direction: column-reverse; 세로로 정렬된 자식 요소가 역방향으로 바뀜
+
 
 
 
