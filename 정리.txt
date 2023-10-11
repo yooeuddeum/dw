@@ -25,6 +25,7 @@ target="_self " = 현재창에서 열림
 오디오 태그
 예시 <audio controls src="XXX.mp4" alt="XXX" />
 form 태그 = 데이터를 웹 서버 등으로 전송할 때 사용하는 태그
+
 input = 싱글태그 (placeholder=이름을 입력해주세요.)
 예시 input type submit value (button , reset , submit)
 외부 스타일 시트(external) = <link type="text/css" rel="stylesheet" href="mystyle.css">
@@ -103,6 +104,33 @@ flex-direction: row-reverse; 플렉스 컨테이너 기준 오른쪽부터 시�
 flex-direction: row; 왼쪽부터 시작하는 가로축 (정방향)
 flex-direction: column; 세로정렬
 flex-direction: column-reverse; 세로로 정렬된 자식 요소가 역방향으로 바뀜
+
+
+<ul>태그 전용
+
+justify-content: flex-start;  기본값
+justify-content: flex-end;   배치만 우측으로 변경
+justify-content: center; 중간 배치
+justify-content: space-between; 각각 배열을 일정한 간격으로 띄어줌
+justify-content: space-around; 각 요소의 동일한 여백을 갖도록 배치
+justify-content: space-evenly; 모든 요소 사이의 간격을 동일하게 유지해 배치
+
+align-items: flex-start; 교차축의 시작점으로부터 끝점을 배치
+align-items: flex-end; 교차축의 끝점으로부터 시작점을 배치
+align-items: center;  교차축의 중심부에 배치
+align-items: stretch; 플렉스 아이템이 교차축 길이에 맞춰 늘어남 / 너비 높이가 우선
+
+<li>태그 전용
+
+align-self: stretch; 플렉스 아이템이 교차축 길이에 맞춰 늘어남 / 너비 높이가 우선
+align-self: flex-start; 교차축의 시작점으로부터 끝점을 배치
+align-self: flex-end; 교차축의 끝점으로부터 시작점을 배치
+align-self: center; 교차축의 중심부에 배치
+
+
+flex-grow: 기본값 0  늘려줄때
+flex-shrink: 기본값 1 줄여줄때
+flex 기본값 0 
 
 
 
