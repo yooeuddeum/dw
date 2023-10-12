@@ -119,7 +119,7 @@ justify-content: flex-start;  기본값
 justify-content: flex-end;   배치만 우측으로 변경
 justify-content: center; 중간 배치
 justify-content: space-between; 각각 배열을 일정한 간격으로 띄어줌 (양끝 여백 없음)
-justify-content: space-around; 각 아이템요소의 동일한 여백을 갖도록 배치
+justify-content: space-around; 각 전체 요소의 동일한 여백을 갖도록 배치
 justify-content: space-evenly; 모든 요소 사이의 간격을 동일하게 유지해 배치
 
 align-content는 세로 배열
