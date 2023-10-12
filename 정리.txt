@@ -144,9 +144,10 @@ align-self: flex-end; 교차축의 끝점으로부터 시작점을 배치
 align-self: center; 교차축의 중심부에 배치
 
 
-flex-grow: 기본값 0  늘려줄때
-flex-shrink: 기본값 1 줄여줄때
-flex 기본값 0 
+flex-grow: 기본값 0  플렉스 아이템 기본 크기보다 더 키우고 싶을때
+flex-shrink: 기본값 1 플레스 아이템 기본 크기보다 더 작게  하고 싶을때
+flex 기본값 0
+flex : 0  1  200px  < 3가지 명령어를 한번에 쓸때 
 
 
 
