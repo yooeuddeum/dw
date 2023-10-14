@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .style {
+        border: 3px solid black;
+        width: 100px;
+        height: 100px;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .left {
+        float: left;
+    }
+    .right {
+        float: right;
+    }
+    .blue {
+        background-color: blue;
+    }
+    .pink {
+        background-color: pink;
+    }
+    .green {
+        background-color: green;
+    }
+    .red {
+        background-color: red;
+    }
+</style>
+<body>
+    <div class="style blue left">블루</div>
+    <div class="style pink left">핑크</div>
+    <div class="style green left" style="clear: both;">그린</div>
+    <div class="style red left">레드</div>
+    
+    <div class="blue style right">블루</div>
+    <div class="pink style right">핑크</div>
+    <div class="green style right" style="clear: both;">그린</div>
+    <div class="red style right">레드</div>
+    
+</body>
+</html>

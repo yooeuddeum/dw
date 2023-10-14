@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ * {
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0px;
+    }
+    ul {
+        padding: 0px;
+        list-style-type: none;
+        border: 5px solid gray;
+    }
+    li {
+        background-color: beige;
+        border: 5px solid tomato;
+        border-radius: 8px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .container {
+        display: grid;
+        height: 500px;
+       
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr );
+        
+        grid-template-areas:
+        "header header header"
+        "aside main main"
+        "aside main main"
+        "footer footer footer";
+       
+        gap: 10px;
+    }
+    li:nth-child(1){  
+        grid-area: header;
+    }
+    li:nth-child(2){
+        grid-area: main;
+    }
+    li:nth-child(3){
+        grid-area: aside;
+    }
+    li:nth-child(4){
+        grid-area: footer;
+    }
+   
+
+    
+</style>
+<body>
+    <ul class="container">
+        <li class="item">header</li>
+        <li class="item">main</li>
+        <li class="item">aside</li>
+        <li class="item">footer</li>
+       
+    </ul>
+ 
+    
+</body>
+</html>
