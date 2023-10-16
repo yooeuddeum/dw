@@ -28,6 +28,7 @@
     .container {
         display: grid;
         height: 500px;
+        gap: 10px;
        
         grid-template-rows: repeat(4, 1fr);
         grid-template-columns: repeat(3, 1fr );
@@ -38,7 +39,6 @@
         "aside main main"
         "footer footer footer";
        
-        gap: 10px;
     }
     li:nth-child(1){  
         grid-area: header;

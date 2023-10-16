@@ -61,14 +61,20 @@
         border-radius: 20px;
         margin: 5px;
         font-size: 12px;
+        text-align: left;
     }
     #section {
         background-color: green;
         float: left;
-        width: 50%;
+        width: 55%;
         height: 40%;
         border-radius: 20px;
-        margin: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+        
+        
+        
         
        
         
@@ -96,6 +102,16 @@
     h3 {
         color: white;
     }
+    .article {
+        margin: 20%;
+        padding-left: 3%;
+        padding-right: 3%;
+        border-style: dotted;
+        font-size: 20px;
+
+        
+        
+    }
 </style>
 <body>
     <div id="inner">
@@ -104,22 +120,14 @@
             <h1>Web Shopping</h1>
         </div>
         <div id="nav">
-            <Pre><h3>home  shopping About  news  my account  contacts</h3></Pre>
-      
+        
         </div>
         <div id="aside">
-            <h2>&nbsp;카테고리</h2>
-            <p>&nbsp;컴퓨터</p>
-            <p>&nbsp;의류</p>
-            <p>&nbsp;음악</p>
-            <p>&nbsp;영화</p>
-            <p>&nbsp;스포츠/레저</p>
-            <p>&nbsp;가구/인테리어</p>
-            <p>&nbsp;식품</p>
+        
         </div>
         <div id="aside1">
             &nbsp;<h2>Shopping Cart</h2>
-            <p>현재 쇼핑카트에 물품이 없습니다.</p>
+            <p>&nbsp;현재 쇼핑카트에 물품이 없습니다.</p>
             <a href="www.daum.net">&nbsp;쇼핑카트 보기</a>
             <h2>Log IN</h2>
             아이디<br>
@@ -127,12 +135,14 @@
             패스워드<br>
             <input type="password">
             <button>로그인</button>  
-            <button>초기화</button><br> 
+            <button>초기화</button><br><br> 
             <a href="www.naver.com">&nbsp;회원가입</a> 
             <a href="www.google.com">&nbsp;비밀번호 분실</a> 
         </div>
         <div id="section">&nbsp;
-            <div id="article">&nbsp;</div>
+            <div id="article1" class="article">&nbsp;</div>
+            <div id="article2" class="article">&nbsp;</div>
+            <div id="article3" class="article">&nbsp;</div>
         </div>
         <div id="footer">
             <p>2019.08.23 DW아카데미 042-123-4567</p>
