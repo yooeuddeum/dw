@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0px;
+    }
+    ul {
+        padding: 0px;
+        list-style-type: none;
+        border: 5px solid black;
+    }
+    li {
+        border: 5px solid red;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .inner {
+        display: grid;
+        height: 500px;
+        gap: 10px;
+
+        grid-template-rows:repeat(4, 1fr) ; 
+        grid-template-columns: repeat(3, 1fr);
+        
+        grid-template-areas: 
+        "header header header"
+        "nav main main"
+        "nav main main"
+        "footer footer footer";
+    }
+    li:nth-child(1){
+    grid-area: header;    
+    }
+    li:nth-child(2){
+    grid-area: nav;
+    }
+    li:nth-child(3){
+    grid-area: main;
+    }
+    li:nth-child(4){
+    grid-area: footer;
+    }
+
+</style>
+<body>
+    <ul class="inner">
+        <li class="item">header</li>
+        <li class="item">nav</li>
+        <li class="item">main</li>
+        <li class="item">footer</li>
+    </ul>
+    
+</body>
+</html>
