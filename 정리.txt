@@ -183,7 +183,8 @@ rotate = 단위는 deg를 사용하고 주어진 각도가 양수이면 시계�
 4.translate 는 현재 위치에서 해당 요소를 x축과 y축의 거리만큼 이동시킨다. 이동
 
 5.matrix는 모든 transform 메서드를 한 줄에 설정할 수 있도록 해준다.
-matrix(scalex(), skewy(),skewx(), scaley() scalex())
+matrix(scalex(), skewy(),skewx(), scaley(), translateX(),translateY)
+
 
 *transition 을 사용하여 요소의 변경(transform)을 정해진 시간동안 
 부드럽게 변화시킬 수 있다.
@@ -209,9 +210,21 @@ ease-out : 효과가 빠르게 시작되고 천천히 느려진다.
 ease-in-out : 효과가 천천히 시작되어, 천천히 끝난다. 
 
 
+Filter 속성
 
- 
-
+blur = 이미지에 흐림 효과를 적용
+brightness = 이미지의 밝기를 조정
+contrast = 이미지의 대비를 조정
+drop-shadow = 이미지에 그림자 효과를 적용 
+drop-shadow(h-shadow v-shadow blur spread color);
+h-shadow - 필수 , 가로 그림자의 픽셀값 (음수값은 그림자의 위치가 왼쪽)
+v-shadow - 필수 , 세로 그림자의 픽셀값 (음수값은 그림자의 위치가 위쪽)
+blur - 선택, 흐림정도 픽셀값(음수값 비허용)
+spread - 선택, 번짐정도 픽셀값(음수값 허용)
+color - 선택, 그림자 색상
+grayscale - 이미지를 회색조로 변환 (흑백)
+hue-rotate - 이미지 색조 회전을 적용
+sepia - 이미지를 세피아로 변환
 
 
 
