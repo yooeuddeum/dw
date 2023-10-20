@@ -168,22 +168,34 @@ column-gap
 
 
 transform 속성을 사용하여 HTML 요소의 모양, 크기 등을 자유롭게 변경할 수 있다.
-rotate = 회전
+
+rotate(회전) 
+scale(사이즈조절)
+skew(왜곡 / 기울림)
+translate(이동)
+
+
 rotate = 단위는 deg를 사용하고 주어진 각도가 양수이면 시계방향
 음수이면 반시계방향으로 회전한다.
 
 1.rotate 단위 : deg , turn, rad, grad
 
-2.scale은 해당 요소의 크기를 주어진 배율만큼 늘리거나 줄인다.
+2.scale(사이즈조절)은 해당 요소의 크기를 주어진 배율만큼 늘리거나 줄인다.
   scale(가로,세로)
 
 
-3.skew(2차원용)는 해당 요소를 주어진 각도만큼 x축 y축 방향으로 기울인다. 비트는거
+3.skew(왜곡 / 기울림)는 해당 요소를 주어진 각도만큼 x축 y축 방향으로 기울인다. 비트는거
 
-4.translate 는 현재 위치에서 해당 요소를 x축과 y축의 거리만큼 이동시킨다. 이동
+4.translate(이동) 는 현재 위치에서 해당 요소를 x축과 y축의 거리만큼 이동시킨다. 
 
 5.matrix는 모든 transform 메서드를 한 줄에 설정할 수 있도록 해준다.
 matrix(scalex(), skewy(),skewx(), scaley(), translateX(),translateY)
+
+1.  javascript 를 이용하여 item 에 transform 요소를 적용하기 편리하며, 
+
+2. 적용된 transform 값을 추출하기도 좋으며, 
+
+3. trasnfrom matrix 를 이용한 3d구현이 편리합니다.
 
 
 *transition 을 사용하여 요소의 변경(transform)을 정해진 시간동안 
