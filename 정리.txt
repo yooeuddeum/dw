@@ -249,7 +249,7 @@ grayscale - 이미지를 회색조로 변환 (흑백)
 hue-rotate - 이미지 색조 회전을 적용
 sepia - 이미지를 세피아로 변환
 
-hsla(0, 100%, 60%, 0.9)
+hsla(0~360, 100%, 50%, 0.5)
 
 
 
@@ -263,6 +263,21 @@ a : alpha - 불투명도 0.0~1.0
 box-shadow: none ㅣ x-position y-position blur spread color ㅣ inset ㅣ initial
 
 
+변수 키워드
+
+let, const , var
+
+const는 선언과 동시에 반드시 초기화가 되어야한다. 한개의 값만 고정
+
+스크림트 변수명을 지을 때 사용 안되는것
+for , while , 숫자
+
+시작할수 있는것 
+_ , $
+
+{}  < 코드 블럭
+
+=  > 대입연산자
 
 
 
