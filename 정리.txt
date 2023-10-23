@@ -251,6 +251,18 @@ sepia - 이미지를 세피아로 변환
 
 
 
+hsla()
+h : hue - 색상(=색조 =색깔) 0~360
+s : saturation - 채도(=컬러 정도 음영)
+l : lightness - 명도(=밝기) 0~100%
+a : alpha - 불투명도 0.0~1.0
+
+
+box-shadow: none ㅣ x-position y-position blur spread color ㅣ inset ㅣ initial
+
+
+
+
 
 
 
