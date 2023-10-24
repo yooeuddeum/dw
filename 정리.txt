@@ -267,7 +267,7 @@ box-shadow: none ㅣ x-position y-position blur spread color ㅣ inset ㅣ initi
 
 let, const , var
 
-const는 선언과 동시에 반드시 초기화가 되어야한다. 한개의 값만 고정
+const는 선언과 동시에 반드시 초기화가 되어야한다. 한개의 값만 고정 / 상수를 지정
 
 스크림트 변수명을 지을 때 사용 안되는것
 for , while , 숫자
@@ -278,6 +278,14 @@ _ , $
 {}  < 코드 블럭
 
 =  > 대입연산자
+
+maxValue = (x > y) ? x:y;
+ 조건식
+
+ string - 검은색
+ number - 파랑색
+
+ prompt - 결과를 string으로 바꿔준다.
 
 
 
