@@ -50,3 +50,7 @@
 #modal_body {
     padding: 1em 10px;
 }
+
+#modal_open {
+    cursor: pointer;
+}
