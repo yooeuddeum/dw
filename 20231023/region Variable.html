@@ -9,7 +9,7 @@
     
 </body>
 <script>
-    var x; // undefined 는 전역 객체의 속성입니다. 즉, 전역 범위에서의 변수
+    let x; // undefined 는 전역 객체의 속성입니다. 즉, 전역 범위에서의 변수
     document.write(`<h1>${x}</h1>`)
     x = 1;  // 좌변에다가 우변에 있는 값을 할당한다.
     document.write(`<h1>${x}</h1>`)
@@ -29,6 +29,8 @@
     
     function add(a,b) {
         // let sum = a + b; //지역 변수로 선언
+
+
         sum = a + b;    
     }
     function sub(a,b) {
@@ -40,9 +42,9 @@
         sub(10,4);
         document.write("sub=" + res); //오류 , 반환값을 이용
 
-        let str;
-        str = "Hello World!";
-        alert(str);
+        // let str;
+        // str = "Hello World!";
+        // alert(str);
     
     
 </script>
