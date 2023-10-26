@@ -43,22 +43,23 @@
     
     const num = prompt("점수를 입력하세요.","0~100 사이의 정수");
     
-    if(90 > num && num < 100){
+    if(90 >= num && num <= 100){
         alert("A 학점입니다.");
     }
-    else if(80 < num && num < 89){
+    else if(80 <= num && num <= 89){
         alert("B 학점입니다.");
     }
-    else if(70 < num && num > 79){
+    else if(70 <= num && num >= 79){
         alert("C 학점입니다.");
     }
-    else if(60 < num && num > 69){
+    else if(60 <= num && num >= 69){
         alert("D 학점입니다.");
     }
 
-    else if(0 < num && num > 59){
+    else if(0 <= num && num >= 59){
         alert("F 학점입니다.");
     }
+    
 
     // input = prompt("A학점입니다.","90~100");
     // num = parseInt(input);
