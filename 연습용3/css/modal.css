@@ -1,0 +1,56 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#modal_back {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.2);
+}
+
+#modal_win {
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 3px 8px 10px rgba(0,0,0,0.4);
+    border-radius: 5px;
+    max-width: 600px;
+    width: calc(100% - 30px);
+}
+
+#modal_header {
+    height: 30px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#modal_header h4 {
+    float: left;
+}
+#modal_close {
+    float: right;
+    width: 20px;
+    height: 20px;
+    background-color:  white;
+    border: 1px solid #666666;
+    cursor: pointer;
+}
+
+#modal_body {
+    padding: 1em 10px;
+}
+
+#modal_open {
+    cursor: pointer;
+}
