@@ -7,28 +7,47 @@
     <meta name="author" content="Euddeum yoo">
     <meta name="keywords" content="메뉴바,메인메뉴,서브메뉴,depth,breadcrumb">
     <meta name="description" content="메인메뉴, 서브메뉴를 포함하는 메뉴 깊이(depth)가 있는 메뉴바(네비게이션 바)를 제작할 수 있다.">
-    <link href="../연습용4/css/common.css" rel="stylesheet">
+    <link href="../연습/css/common.css" rel="stylesheet">
     <title>DW종합병원</title>
-    <meta name="og:title" property ="DW종합병원">
-    <meta name="og:url" property ="http://dwhospital.com">
-    <meta name="og:image" property ="http://dwhospital2.com">
+    <meta name="og:title" property="DW종합병원" />
+    <meta name="og:url" property="http://dwhospital.com" />
+    <meta name="og:image" property="http://dwhospital.com/images/og.jpg" />
+    <meta
+      name="og:description"
+      property="헌신과 사랑으로 고객을 대하는 종합병원 DW종합병원의 공식 웹사이트"
+    />
+    <link href="favicon.ico" rel="icon shortcut" />
+    <link href="css/common.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/42ea0f5874.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script
+      type="text/javascript"
+      src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+  
 
-    <link href="favicon.ico" rel="icon shortcut">
-    <link href="css/common.css" rel="stylesheet">
-
-    <script src="https://kit.fontawesome.com/42ea0f5874.js" 
-    crossorigin="anonymous">
-</script>
 </head>
 <body>
-
+    
     <!-- <i class="fas fa-bars"></i> -->
     
 <header>
     <div class="container">
     <h1>
         <a href="index.html">
-        <img src="../연습용4/images/logo.jpg" alt="DW종합병원 로고">
+        <img src="../연습/images/logo.jpg" alt="DW종합병원 로고">
         </a>
     </h1>
         <div id="header_right">
@@ -48,29 +67,48 @@
             </ul>
             </nav>
             <nav id="lnb">
+                <div id="panel"></div>
                 <ul>
                     <li class="main">
-                       <a href=""></a>
+                       <a href="">진료안내</a>
                        <ul class="sub">
-                        <li><a href=""></a></li>
+                        <li><a href="">진료과/의료진</a></li>
+                        <li><a href="">전문센터</a></li>
+                        <li><a href="">클리닉</a></li>
+                        <li><a href="">외래진료안내</a></li>
+                        <li><a href="">입/퇴원안내</a></li>
+                        <li><a href="">진료지원</a></li>
+                        <li><a href="">의약품정보</a></li>
+                        <li><a href="">건강정보</a></li>
                        </ul> 
                     </li>
                     <li class="main">
-                       <a href=""></a>
+                       <a href="">진료예약</a>
                        <ul class="sub">
-                        <li><a href=""></a></li>
+                        <li><a href="">예약안내</a></li>
+                        <li><a href="">예약확인</a></li>
+                        <li><a href="">증명서발급</a></li>
+                        <li><a href="">비급여진료비</a></li>
                        </ul> 
                     </li>
                     <li class="main">
-                       <a href=""></a>
+                       <a href="">이용안내</a>
                        <ul class="sub">
-                        <li><a href=""></a></li>
-                       </ul> 
+                        <li><a href="">고객지원</a></li>
+                        <li><a href="">찾아오는길</a></li>
+                        <li><a href="">원내배치도</a></li>
+                        <li><a href="">전화번호안내</a></li>
+                        <li><a href="">주차안내</a></li>
+                    </ul> 
                     </li>
                     <li class="main">
-                       <a href=""></a>
+                       <a href="">병원소개</a>
                        <ul class="sub">
-                        <li><a href=""></a></li>
+                        <li><a href="">병원소개</a></li>
+                        <li><a href="">병원소식</a></li>
+                        <li><a href="">행복지기</a></li>
+                        <li><a href="">홍보동영상</a></li>
+                        <li><a href="">서비스현장</a></li>
                        </ul> 
                     </li>
                 </ul>
@@ -81,8 +119,57 @@
 
 
 
-    <main></main>
+    <main>
+        <div class="container">
+            <div id="slider">
+                <div><img src="../연습/images/picture1.jpg" alt="슬라이더 이미지"></div> 
+                <div><img src="../연습/images/picture2.jpg" alt="슬라이더 이미지"></div>
+                <div><img src="../연습/images/picture3.jpg" alt="슬라이더 이미지"></div>
+                <div><img src="../연습/images/picture4.jpg" alt="슬라이더 이미지"></div>
+                <div><img src="../연습/images/picture5.jpg" alt="슬라이더 이미지"></div> 
+            </div>
+            <script>
+                $("#slider").slick({
+                    autoplay: true,
+                    autoplaySpeed: 5000,
+                    // arrows: false,
+                    // fade: true,
+                    // slidesToshow: 2,
+                    // slidesToScroll: 3,
+                });
+            </script>
+        </div>
+    </main>
 
-    <footer></footer>
+    <footer>
+        <div id="footer_top">
+            <div class="container">
+                <a href="#">비급여 진료비</a>
+                <a href="#">환자권리장전</a>
+                <a href="#">고객현장</a>
+                <a href="#">정보공개</a>
+                <a href="#">청렴센터</a>
+                <a href="#">청렴도축정결과공개</a>
+            </div>
+        </div>
+        <div id="footer_bottom">
+            <div class="container">
+                <div id="footer_bottom_left">
+                    <div>
+                        <a href="#">웹이용약관</a>
+                        <a href="#" style="color: rgba(227, 252, 4, 0.952);">개인정보처리방침</a>
+                        <a href="#">이메일무단수집거부</a>
+                        <a href="#">고객의 소리</a>
+                    </div>
+                    <div>
+                        <p>대표전화 : 1599-7123 말로거는전화 : 1636 + "충남대학교병원"이라고 말하세요!</p>
+                        <p>(35015)대전광역시 중구 문화로 282 충남대학교병원 사업자번호 : 305-82-08811</p>
+                        <p>COPYRIGHT BY CHUNGNAM NATIONAL UNIVERSITY HOSPITAL ALL RIGHTS RESERVED</p>
+                    </div>
+                </div>
+                <div id="footer_bottom_right"></div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
