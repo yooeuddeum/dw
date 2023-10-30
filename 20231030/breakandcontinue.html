@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let msg = "";
+    for(let i = 0; i <10; i++){
+        if(i == 3){
+            break
+        }
+        msg = msg + i + "<br>";
+    }
+    document.write(`<h1>${msg}</h1>`);
+    
+    document.write(`<hr>`);
+    
+    let msg1 = "";
+    for(let i = 0; i <10; i++){
+        if(i == 3){
+            continue;
+        }
+        msg1 = msg1 + i + "<br>";
+    }
+    document.write(`<h1>${msg1}</h1>`);
+
+    document.write(`<hr>`);
+
+
+    let j = 0;
+    while(true){
+        document.write(`<h1>${j}</h1>`);
+        j++;
+        if(j == 5){
+            break;
+        }
+    }
+</script>
+</html>
