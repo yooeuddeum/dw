@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // 별찍기
+    // *****
+    // *****
+    // *****
+    // *****
+    // *****
+    for(let o = 1; o <= 5; o++){
+        for(let p = 1; p <=5; p++){
+            document.write(`*`);
+        } document.write(`<br>`);
+
+    }
+    document.write(`*`);
+    document.write(`*`);
+    document.write(`*`);
+    document.write(`*`);
+    document.write(`*`);
+    document.write(`<br>`);
+
+    document.write(`<hr>`);
+    
+    for(let b = 1; b <= 5; b++){
+        for(let a = 1; a <= b; a++){
+            document.write(`*`);
+
+        }document.write(`<br>`);
+    }
+    document.write(`<hr>`);
+
+    for(let c = 1; c <= 5; c++){
+        for(let d = 4; d >= c; d--){
+            document.write(`&nbsp`);  
+        }
+        for(let f = 0; f < c; f++){
+            document.write(`*`);  
+            
+        }
+        document.write(`<br>`);  
+    }
+</script>
+</html>
