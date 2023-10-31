@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+  
+     
+    const x1 =prompt("가위바위보를 입력하세요.", "ex) 바위")
+    const x2 =prompt("가위바위보를 입력하세요.", "ex) 바위")
+    
+    let result = "";
+    
+    if (x1 == "가위") {
+      if (x2 == "가위") {
+        result = "무승부";
+      } else if (x2 == "바위") {
+        result = "사람2 승";
+      } else {
+        result = "사람1 승";
+      }
+    } else if (x1 == "바위") {
+      if (x2 == "가위") {
+        result = "사람1 승";
+      } else if (person2 == "바위") {
+        result = "무승부";
+      } else {
+        result = "사람2 승";
+      }
+    } else {
+      if (x2 == "보") {
+        result = "사람2 승";
+      } else if (x2 == "바위") {
+        result = "사람1 승";
+      } else {
+        result = "무승부";
+      }
+    }
+
+    document.write(`<h1>사람1 : ${x1}<br>사람2 : ${x2}<br><br>결과 : ${result}</h1>`);
+</script>
+</html>
