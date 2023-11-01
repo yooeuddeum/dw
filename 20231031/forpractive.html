@@ -45,10 +45,111 @@
         }
         for(let f = 1; f <= c; f++){
             document.write(`*`);  
-            
         }
         document.write(`<br>`);  
     }
+      
+    
     document.write(`<hr>`);
+
+    for (let i = 1; i <= 5; i++){
+        for(let j = 5; j >= i; j--){
+            document.write(`*`);
+        }
+        document.write(`<br>`);
+    }
+    document.write(`<hr>`);
+
+    
+
+
+    for (let i = 0; i < 5; i++){
+        for (let j = 0; j < i; j++){
+            document.write(`&nbsp`);
+        }
+        for (let k = 5; k > i; k--){
+            document.write(`*`);
+        }
+        document.write(`<br>`);
+    }
+    
+    document.write(`<hr>`);
+
+    
+    // let x = 1;
+
+    // for (let i = 0; i < 5; i++){
+    //     for (let j = 4; j > i; j--){
+    //         document.write(`&nbsp`);
+    //     }
+    //     for (let k = 0; k < x; k++){
+    //         document.write(`*`);
+    //     }
+    //     x += 2;
+    //     document.write(`<br>`);
+    // }
+    
+    document.write(`<hr>`);
+    
+    // let y = 9;
+
+    // for (let i = 0; i < 5; i++){
+    //     for (let j = 0; j < i; j++){
+    //         document.write(`&nbsp`);
+    //     }
+    //     for (let k = y; k > 0; k--){
+    //         document.write(`*`);
+    //     }
+    //     y -= 2;
+    //     document.write(`<br>`);
+    // }
+    
+    document.write(`<hr>`);
+
+    let x = 1;
+
+    for (let i = 0; i < 5; i++){
+        for (let j = 4; j > i; j--){
+            document.write(`&nbsp`);
+        }
+        for (let k = 0; k < x; k++){
+            document.write(`*`);
+        }
+        x += 2;
+        document.write(`<br>`);
+    }
+    
+    let y = 7;
+
+    for (let i = 1; i < 5; i++){
+        for (let j = 0; j < i; j++){
+            document.write(`&nbsp`);
+        }
+        for (let k = y; k > 0; k--){
+            document.write(`*`);
+        }
+        y -= 2;
+        document.write(`<br>`);
+    }
+
+    document.write(`<hr>`);
+  
+
+
+   
+
+
+
+
+
+
+
+
+   
+    
+    
+    
+  
+   
 </script>
 </html>
