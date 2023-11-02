@@ -10,27 +10,17 @@
 </body>
 <script>
     
-
-
-
-
-
-
-
-// for (let i = 1; i <= 10; i++) {
-//     for (let k = 1; k <= 10; k++) {
-//         let sum = i + k;
+for (let i = 1; i <= 10; i++) {
+    for (let j = 1; j <= 10; j++) {
+        let x = i + j;
         
-//         if (sum % 3 != 0) {
-//             continue; // 
-//         }
+        if (x % 3 != 0) {
+            continue;  
+        }
 
-//         document.write(`${i} + ${k} = ${sum}` + '<br>');
-//     }
-// }
-
-
-
+        document.write(`<h1>${i} + ${j} = ${x}</h1>`);
+    }
+}
 
 </script>
 </html>
