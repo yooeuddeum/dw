@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // 1. 첫번째 사람의 가위바위보를 입력
+    const per1 = prompt("가위바위보를 입력하세요")
+    // 2. 두번쨰 사람의 가위바위보를 입력
+    const per2 = prompt("가위바위보를 입력하세요")
+    // 3. 결과
+
+    let result = "";
+    if(per1 == "가위"){
+        if (per2 == "가위"){
+         result = "무승부";
+    }else if(per2 == "바위"){
+         result = "두번째 사람 승";
+    }else if(per2 == "보"){
+        result = "첫번째 사람 승";
+    }
+    } if (per1 == "바위"){
+        if(per2 == "가위"){
+            result = "첫번째 사람 승";
+    }else if(per2 == "바위"){
+        result = "무승부";
+    }else if(per2 == "보"){
+        result = "두번째 사람 승";
+    }
+    } else {
+        if (per2 == "가위"){
+            result = "두번째 사람승";
+        } else if (per2 == "바위"){
+            result = "첫번째 사람승";
+        } else {
+            result = "무승부";
+        }
+    } 
+    document.write(`<h1>첫번째 사람 : ${per1}<br>두번째 사람 : ${per2} <br> 결과 : ${result}</h1>`)
+    
+</script>
+</html>
