@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        width: 300px;
+        height: 600px;
+        border: 3px solid #c5c5c5;
+        border-radius: 10px;
+        position: absolute;
+        top: 100px;
+        left: 30px;
+        padding: 0 10px;
+        overflow: auto;
+    }
+    p {
+        background-color: teal;
+        padding: 10px 10px;
+        border-radius: 10px;
+    }
+</style>
+<body>
+    <input type="text" id="input" placeholder="할 일을 적어주세요..">
+    <button onclick="clickfunc()">클릭</button>
+    <div></div>
+    
+</body>
+<script>
+    function clickfunc(){
+        // 1. input 요소를 가져온다.
+        const input = document.querySelector("input");
+        // 2. 가져온 input 요소의 value 를 꺼낸다.
+        const inputval = input.value;
+        // 2.1 가져온 value 공백("") 이면 내용을 입력해주세요.
+        // 라는 alert 띄우고 함수 종료
+        if(inputval == ""){
+            alert("내용을 입력해주세요.");
+            return;
+        }
+
+        // 3. p태그를 만든다.
+        const p = document.createElement("p");
+
+        // 4. 만든 p태그에 가져온 input value 를 넣는다.
+        p.innerHTML = inputval;
+        
+        
+
+        // 4.1 0~255까지의 랜덤한 숫자 3개를 추출한다.
+        let numArr = [];
+        for (let i = 0; i < 3; i++){
+            numArr[i] = parseInt(Math.random() * 255 + 1);
+        }
+        
+        // 4.2 추출한 랜덤숫자로 p태그의 backgroundColor 를 바꿔준다.
+        
+        // p.style.backgroundColor = `rgb(${numArr[0]},${numArr[1]},${numArr[2]})`;
+        p.style.backgroundColor = `rgb(${numArr.toString()})`;
+
+        const luma =
+         0.2126 * numArr[0] + 0.7152 * numArr[1] + 0.0722 * numArr[2];
+         console.log(luma);
+
+         p.style.color = parseInt(luma) <= 155 ? "white" : "black";
+
+        // 5. div 요소를 가져온다.
+        const div = document.querySelector("div");
+
+        // 6. 가져온 div 요소에 만든 p태그를 추가한다.
+        div.append(p);
+        input.value = "";
+      
+    }
+
+</script>
+</html>
