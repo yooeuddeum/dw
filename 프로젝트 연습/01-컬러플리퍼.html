@@ -12,7 +12,7 @@
         margin: 0;
     }
     .content {
-        height: 100px;
+        height: 500px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -26,6 +26,11 @@
         border-radius: 10px;
         background-color: azure;
         cursor: pointer;
+        font-size: 18px;
+        box-shadow: 3px 3px 3px;
+        font-weight: bold;
+      
+        
     }
     .content button:hover {
         transform: scale(1.1);
@@ -52,7 +57,7 @@ function btnClickHandler() {
     hexcode += hexElements[getRandomNumber()];
   }
   
-  document.querySelector('.content h1 span:first-child').innerText = `Background Color : `;
+  document.querySelector('.content h1 span:first-child').innerText = `배경색 바꾸기 : `;
   document.querySelector('.content h1 span:last-child').innerText = `${hexcode}`;
   document.body.style.backgroundColor = hexcode;
   document.querySelector('.content h1 span:last-child').style.color = hexcode;
