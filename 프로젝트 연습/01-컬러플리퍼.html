@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+   <!-- Color Flipper 만들기 -->
+<style>
+    body {
+        margin: 0;
+    }
+    .content {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content button {
+        width: 150px;
+        height: 50px;
+        margin-top: 20px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: azure;
+        cursor: pointer;
+    }
+    .content button:hover {
+        transform: scale(1.1);
+        transition: 0.2s;
+    }
+</style> 
+<body>
+    <div class="wrap">
+        <div class="content">
+            <h1>
+                <span></span>
+                <span></span>
+            </h1>
+            <button type="button">클릭</button>
+        </div>
+    </div>
+</body>
+<script>
+const hexElements = [0, 1, 2, 3, 4, 5,'A', 'B', 'C', 'D', 'E', 'F'];
+
+function btnClickHandler() {
+  let hexcode = '#';
+  for(let i = 1; i <= 6; i++) {
+    hexcode += hexElements[getRandomNumber()];
+  }
+  
+  document.querySelector('.content h1 span:first-child').innerText = `Background Color : `;
+  document.querySelector('.content h1 span:last-child').innerText = `${hexcode}`;
+  document.body.style.backgroundColor = hexcode;
+  document.querySelector('.content h1 span:last-child').style.color = hexcode;
+}
+
+function getRandomNumber() {
+  return Math.floor(Math.random() * (hexElements.length - 1));
+}
+
+btnClickHandler();
+document.querySelector('.content button').addEventListener('click', btnClickHandler);
+
+
+
+</script>
+</html>
