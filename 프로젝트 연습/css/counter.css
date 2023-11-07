@@ -1,0 +1,43 @@
+
+
+
+* {
+    box-sizing: border-box;
+    
+}
+*:focus {
+    outline: none;
+}
+.inputWrap {
+    position: relative;
+}
+    
+.inputWrap input {
+    border: 2px solid #ced4da;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px;
+}
+    
+.timeWrap {
+    position: absolute;
+    right: 12px;
+    padding-top: 6px;
+    color: #bf777d;
+}
+.input {
+    width: 220px;
+    height: 30px;
+}
+#button {
+    height: 30px;
+    margin-left: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px;
+}
+   
+    
+    
+    
