@@ -39,11 +39,13 @@
         // 라는 alert 띄우고 함수 종료
         if(inputval == ""){
             alert("내용을 입력해주세요.");
-            return;
+            return; // 함수 자체를 종료해준다.
         }
 
         // 3. p태그를 만든다.
         const p = document.createElement("p");
+        // createElement() 만들때 쓰는것
+
 
         // 4. 만든 p태그에 가져온 input value 를 넣는다.
         p.innerHTML = inputval;
@@ -61,11 +63,11 @@
         // p.style.backgroundColor = `rgb(${numArr[0]},${numArr[1]},${numArr[2]})`;
         p.style.backgroundColor = `rgb(${numArr.toString()})`;
 
-        const luma =
-         0.2126 * numArr[0] + 0.7152 * numArr[1] + 0.0722 * numArr[2];
-         console.log(luma);
+        const luma = // 배경 밝기에 맞춰 컬러 조정하는것 
+        0.2126 * numArr[0] + 0.7152 * numArr[1] + 0.0722 * numArr[2];
+        console.log(luma);
 
-         p.style.color = parseInt(luma) <= 155 ? "white" : "black";
+        p.style.color = parseInt(luma) <= 155 ? "white" : "black"; //삼항 연산자(조건부 반대)
 
         // 5. div 요소를 가져온다.
         const div = document.querySelector("div");

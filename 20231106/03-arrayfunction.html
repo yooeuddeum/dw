@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // 원본 배열을 변형시키지 않고 반복해서 참조하는 함수
+    document.write(`<h1>1. forEach() 함수</h1>`)
+    // 1. forEach() 함수 - 해당 배열의 모든 요소에 대하여 반복적으로
+    // 명시된 함수를 실행한다.
+    const arr = [1, true, "Javascript"];
+    arr.forEach((v) => {
+        document.write(`<h2>${v}</h2>`);
+    });
+    document.write(`<hr>`);
+
+    // forEach 원형
+    // 익명 함수
+    arr.forEach(function(value, index, array){
+        document.write(`<h2>value : ${value}, index : ${index}, array : ${array},</h2>`);
+    });
+    document.write(`<hr>`);
+
+    
+    function arrPrint(value, index, array){
+        document.write(`<h2>${value}</h2>`);
+    }
+    arr.forEach(arrPrint);
+
+    
+    
+    document.write(`<hr>`);
+    document.write(`<h1>1. map() 함수</h1>`)
+    // 2. map() 함수
+    // 해당 배열의 모든 요소에 대하여 반복적으로 명시된 콜백 함수를 실행한 후
+    // 그 해당 결과를 새로운 배열에 담아 반환한다.
+    const arr2 = [3, 4, 5, 6];
+    // arr2 의 요소들에 각각 3을 곱하여 나오는 값으로 만든 새로운 배열을 만들어보세요.
+    
+    const number = arr2.map(function(arr2){
+        return arr2 * 3;
+    });
+    // console.log(number);
+    document.write(`<h2>[${number}]</h2>`);
+
+    document.write(`<hr>`);
+
+    let users = [
+        { firstName: "Beckham", lastName: "David"},
+        { firstName: "De Bruyne", lastName: "Kevin"},
+        { firstName: "Haaland", lastName: "Erling"},
+    ];
+    // lastName, firstname
+    // console.log(users);
+    // let nameArr = [];
+    // for(let i = 0; i < users.length; i++){
+    //     nameArr.push(`${users[i].lastName} ${users[i].firstName} <br>`);
+    // }
+    // console.log(nameArr);
+
+   let nameArr = users.map(function(users){
+    return `${users.lastName} ${users.firstName}`;
+    
+   });
+   document.write(`<h2>[${nameArr}]</h2>`);
+   document.write(`<hr>`);
+
+
+   
+
+
+
+    
+</script>
+</html>
