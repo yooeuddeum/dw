@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>버튼을 누르면 3초 후에 경고 박스가 화면에 표시됩니다.</h1>
+    <button onclick="showAlert()">눌러보세요</button>
+    <button onclick="stopInterval()">반복취소버튼</button>
+</body>
+<script>
+    let startInterval;
+    function showAlert() {
+    startInterval = setInterval(function () { 
+    alert("복습하자.");
+    }, 2000);
+    }
+    
+    function stopInterval() {
+    clearInterval(startInterval);
+    }
+</script>
+</html>

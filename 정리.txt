@@ -56,9 +56,9 @@ display:block : 블록(block)
 display:inline : 인라인(inline)
 display:none : 없는 것으로 간주됨 : 화면에 나타나지 않음 
 visibility:hidden : 화면에서 감춰짐
-<<<<<<< HEAD
+
 solid - 모양 , 꽉찬
-=======
+
 
 font-family = 글꼴 (Times monospace serif;)
 font-size = 폰트 사이즈
@@ -86,7 +86,7 @@ text-align - 정렬 (left , right , center ,justify(양끝정렬))
  z-index = 요소의 스택 순서를 지정
  opacity = 반투명 효과 (1에 가까워질수록 선명)
 
- rgb 색상으로 opacity도 값을 줄 수 있음
+rgb 색상으로 opacity도 값을 줄 수 있음
  
 overflow 속성: 자식 요소가 부모 요소의 범위를 벗어났을 때, 어떻게 처리할 것인지를 지정
 
