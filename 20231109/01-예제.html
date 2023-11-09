@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="com"></p>
+    
+</body>
+<script>
+// 1.
+let x = 3;
+let y = 4;
+
+// 2.
+// let sum = x + y;
+// console.log("합:", sum);
+
+
+// let sum1 = x - y;
+// console.log("차:", sum1);
+
+
+// let sum2 = x * y;
+// console.log("곱:", sum2);
+
+
+// let sum3 = x / y;
+// console.log("나누기:", sum3);
+
+// 3.
+let sum = x + y;
+console.log("x + y =", sum);
+
+
+let sum1 = x - y;
+console.log("x - y =", sum1);
+
+
+let sum2 = x * y;
+console.log("x * y =", sum2);
+
+
+let sum3 = x / y;
+console.log("x / y =", sum3);
+
+// 4.
+
+// if (x > y) {
+//     alert("x이 y보다 큽니다.");
+// } 
+// else if (x < y) {
+//     alert("y가 x보다 큽니다.");
+// } 
+// else {
+//     alert("두 변수는 같습니다.");
+// }
+
+// 5.
+
+// let number = {};
+
+// 6.
+
+// let number = {num1:10,num2:20};
+// console.log(number);
+// num1 = x;
+// num2 = y;
+
+// 7.
+
+// let number = {num1: 10}
+// console.log(number);
+// let number1 = {num2: 20}
+// console.log(number1);
+
+// 8.
+
+// let numArray = [];
+
+// for(let i = 1; i <= 10; i++){
+//     numArray.push(i);
+// }
+// console.log(numArray);
+
+// 9.
+
+let Array = [];
+
+for(let i = 1; i <= 100; i++){
+    Array.push(i);
+}
+console.log(Array);
+
+// 10.
+
+
+let XArray = [];
+
+for (let i = 1; i <= 100; i++) {
+    if (i % 2 == 0) {
+        XArray.push(i);
+    }
+}
+console.log(XArray);
+
+// 11.
+
+let YArray = [];
+
+for (let i = 1; i <= 100; i++){
+    if(i % 2 == 1){
+        YArray.push(i);
+    }
+}
+console.log(YArray);
+
+// 12.
+
+function Hello() {
+    alert('안녕하세요!');
+}
+Hello();
+
+// 13.
+
+
+// function printSum(par1, par2) {
+//     let X = par1 + par2;
+//     console.log(`두개의 파라미터 합:`, X);
+// }
+// printSum(10, 20);
+
+// 14.
+
+
+function printsum(par1, par2) {
+    let X = par1 + par2;
+    let com = document.getElementById("com");
+    com.innerHTML = `<h1>두개의 파라미터 합:${X}</h1>`;
+}
+printsum(40, 10);  
+    
+            
+
+            
+
+        
+
+
+    
+   
+    
+    
+    
+    
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>
