@@ -31,59 +31,51 @@ let y = 4;
 // console.log("나누기:", sum3);
 
 // 3.
-let sum = x + y;
-console.log("x + y =", sum);
+// let sum = x + y;
+// console.log("x + y =", sum);
 
 
-let sum1 = x - y;
-console.log("x - y =", sum1);
+// let sum1 = x - y;
+// console.log("x - y =", sum1);
 
 
-let sum2 = x * y;
-console.log("x * y =", sum2);
+// let sum2 = x * y;
+// console.log("x * y =", sum2);
 
 
-let sum3 = x / y;
-console.log("x / y =", sum3);
+// let sum3 = x / y;
+// console.log("x / y =", sum3);
 
 // 4.
 
 // if (x > y) {
-//     alert("x이 y보다 큽니다.");
+//     alert("x가 y보다 큽니다.");
 // } 
-// else if (x < y) {
+// else{
 //     alert("y가 x보다 큽니다.");
 // } 
-// else {
-//     alert("두 변수는 같습니다.");
-// }
+ 
 
 // 5.
 
 // let number = {};
 
 // 6.
-
-// let number = {num1:10,num2:20};
-// console.log(number);
-// num1 = x;
-// num2 = y;
+// number.num1 = x;
+// number.num2 = y;
 
 // 7.
-
-// let number = {num1: 10}
-// console.log(number);
-// let number1 = {num2: 20}
-// console.log(number1);
+// console.log(number.num1);
+// console.log(number.num2);
 
 // 8.
 
-// let numArray = [];
+let numArray = [];
 
-// for(let i = 1; i <= 10; i++){
-//     numArray.push(i);
-// }
-// console.log(numArray);
+for(let i = 1; i <= 10; i++){
+    numArray.push(i);
+}
+console.log(numArray);
 
 // 9.
 
@@ -139,7 +131,7 @@ Hello();
 function printsum(par1, par2) {
     let X = par1 + par2;
     let com = document.getElementById("com");
-    com.innerHTML = `<h1>두개의 파라미터 합:${X}</h1>`;
+    com.innerHTML = `<h1>두개의 파라미터 합: ${X}</h1>`;
 }
 printsum(40, 10);  
     
