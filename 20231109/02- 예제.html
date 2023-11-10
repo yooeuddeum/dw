@@ -15,28 +15,79 @@
       안녕하세요. 아이디가 p4이고 클래스가 p1인 p 태그입니다.
     </p>
 
-    <button>p1 텍스트 '변경된 내용입니다.' 로 변경</button><br /><br />
-    <button>p2 텍스트 색상 변경</button><br /><br />
-    <button>p3 배경색상 변경</button><br /><br />
-    <button>p4 폰트사이즈 변경</button><br /><br />
+    <button onclick="star1">p1 텍스트 '변경된 내용입니다.'로 변경</button><br><br>
+    <button onclick="star2">p2 텍스트 색상 변경</button><br><br>
+    <button onclick="star3">p3 배경색상 변경</button><br><br>
+    <button onclick="star4">p4 폰트사이즈 변경</button><br><br>
     
 </body>
 <script>
     // 1.
-    let A = document.getElementById('p1');
+    // let Atext = document.getElementById('p1');
     
     // 1.1
-    console.log(A);
+    // console.log(Atext);
 
     // 1.2
+    // let Atext = document.getElementById('p1');
+    // Atext.textContent = '변경했습니다.';
+    
 
     // 1.3
+    // let Atext = document.getElementById('p1');
+    // Atext.style.backgroundColor = '#e9ecef';
+    // Atext.style.color = '#8b2323';
+    
 
     // 2.
+    // let Btext= document.querySelector('p.p1#p4');
 
     // 2.1
-
+    // let Btext = document.querySelector('p.p1#p4');
+    // Btext.textContent = '변경했습니다.';
+    // Btext.style.backgroundColor = '#9ACEEB';
+    // Btext.style.color = '#862e9c';
+    
     // 3.
+
+    function star1() {
+        document.getElementById('p1').innerHTML = "변경된 내용입니다.";
+    }
+    star1();
+
+    function star2() {
+        document.getElementById('p2').style.color = "#e9ecef";
+    }
+    star2();
+
+    function star3() {
+        document.getElementById('p3').style.backgroundColor = "#8b2323";
+    }
+    star3();
+
+    function star4() {
+        document.getElementById('p4').style.fontSize = "24px";
+    }
+    star4();
+
+  
+
+   
+
+    
+
+
+
+
+
+
+
+    
+
+
+
+
+
 
 
 </script>
