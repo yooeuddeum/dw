@@ -86,8 +86,12 @@
     }
     
     function getInput2() {
-      let input2 = document.getElementById('p1').style.backgroundColor = "red";
-      
+    let input2 = document.getElementById('p1');
+    const colorArr = [];
+      for(let i = 0; i < 3; i++){
+    colorArr.push(parseInt(Math.random() * 256));
+    }
+       input2.style.backgroundColor = `rgb(${colorArr.toString()})`;
     }
       
       
