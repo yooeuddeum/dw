@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../20231114/css/messenger.css">
+    <title>DW Messenger</title>
+</head>
+<body>
+    <img class="background" src="../20231114/image/background.png">
+    <div class="container">
+        <!-- header 상대방 정보 표시 및 전화(음성, 영상) 통화 버튼-->
+        <div class="header">
+            <button class="back-btn">
+                <img src="../20231114/image/left-arrow.png" width="30" height="30">
+            </button>
+            <img class="profile-pic" src="../20231114/image/profile.png" width="40" height="40">
+            <div class="info-block">
+                <p class="username">Man</p>
+                <p class="status">1시간 전</p>
+            </div>
+            <div class="call-box">
+                <button>
+                    <img src="../20231114/image/phone-call.png" width="20" height="20">
+                </button>
+                <button>
+                    <img src="../20231114/image/video-call.png" width="20" height="20">
+                </button>
+            </div>
+        </div>
+        <!-- 대화 내용 표시부-->
+        <div id="chat-box">
+            <div class="bubble friend-bubble">굴굴굴굴</div>
+            <div class="bubble friend-bubble">족보</div>
+            <div class="bubble friend-bubble">보족</div>
+            <div class="bubble my-bubble">구르구르구르구르</div>
+        </div>
+        
+        <!-- 대화 작성부-->
+        <div class="footer">
+            <textarea id="input" placeholder="입력하세요."></textarea>
+            <button id="send">
+                <img src="../20231114/image/send.png" width="24" height="24">
+            </button>
+        </div>
+    </div>
+
+</body>
+<script src="../20231114/JS/messenger.js"></script>
+</html>
