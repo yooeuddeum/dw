@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DomTree</title>
+</head>
+<body>
+    <div id="content">
+        <h1 id="title-1">과일</h1>
+        
+            <ul id="list-1">
+                <li>사과</li>
+                <li>딸기</li>
+                <li>복숭아</li>
+                <li>포도</li>
+                <li>오렌지</li>
+                <li>파인애플</li>
+                <li>망고</li>
+            </ul>
+       
+
+        <h1 id="title-2">자동차</h1>
+        <ul id="list-2">
+            <li>아반떼</li>
+            <li>소나타</li>
+            <li>그렌저</li>
+            <li>코나</li>
+            <li>지바겐</li>
+            <li>티코</li>
+            <li>프린스</li>
+        </ul>
+    </div>
+</body>
+<script>
+    const ul = document.getElementById('list-1');
+    console.log(ul);
+
+    // 자식 요소
+    // console.log(ul.children[0]);
+    ul.children[4].style.backgroundColor = 'orange';  // ==> <li>오렌지</li> 배경 입히기
+    console.log(ul.firstChild); //노드 찾는것
+    console.log(ul.firstElementChild.innerHTML); 
+    console.log(ul.lastElementChild.innerHTML); 
+
+    // 부모 요소
+    console.log(ul.parentElement);
+    ul.parentElement.style.border = "5px dotted brown";
+
+    // 부모 요소 & 조상 요소
+    console.log(ul.closest('div#content'));
+    
+
+    // 형제 요소
+    
+    console.log(ul.previousElementSibling);
+    console.log(ul.nextElementSibling);
+    console.log(ul.nextElementSibling.nextElementSibling);
+    ul.nextElementSibling.nextElementSibling.lastElementChild.style.backgroundColor = 'red';
+    
+    
+
+</script>
+</html>
+    
+    
+
+    
