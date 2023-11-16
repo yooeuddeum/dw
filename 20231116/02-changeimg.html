@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="image" src="../resources/img/dog.jpeg" width="500" height="300">
+    <input type="button" onclick="changeImage()" value="눌러보세요">    
+</body>
+<script>
+    function changeImage(){
+    // const img = document.getElementById('image').src='../resources/img/dog2.jpg';
+    const img = document.getElementById('image');
+    //  img.src='../resources/img/dog2.jpg';
+    img.setAttribute('src','../resources/img/dog2.jpg');
+    console.log(img.getAttribute('src'));   
+    console.log(img.getAttribute('id'));  
+    console.log(img.getAttribute('class'));   
+    }
+</script>
+</html>
