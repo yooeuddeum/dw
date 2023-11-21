@@ -19,6 +19,31 @@ function init(){
     });
 }
 
+function wordRain(){
+    const words = document.querySelectorAll('.word');
+    words[0].style.top
+    words[0].getBoundingClientRect().bottom;
+    
+    setInterval(function(){
+        words.forEach(function(el){
+            const rectTop = el.getBoundingClientRect().top;
+            el.style.top = `${rectTop - 75}px`;
+            if(el.getBoundingClientRect().bottom > 810){
+                alert('game over');
+                el.remove();
+            }
+            
+             const colorArr = [];
+             for(let i = 0; i < 3; i++){
+                 colorArr.push(Math.floor(Math.random() * 256));
+             }
+              el.style.color = `rgb(${colorArr.toString()})`;
+         });
+     }, 3000);
+ }
+                
+
+
 const input = document.querySelector('input');
 input.addEventListener('change', function(){
     const word = document.querySelector(`span[id=${input.value}]`);
@@ -35,6 +60,9 @@ input.addEventListener('change', function(){
     input.value = '';
 })
 init();
+wordRain();
+input.focus();
+
     
     
 
