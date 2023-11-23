@@ -18,40 +18,41 @@
         <li>eight</li>
         <li>nine</li>
     </ul>
-    <table border="2px solid black">
-    
+    <table>
         <tr>
-            <th>이름</th>
-            <th>지역</th>
+            <th>이름</th><th>지역</th>
         </tr>
         <tr>
-            <td>홍길동</td>
-            <td>대전</td>
+            <td>홍길동</td><td>대전</td>
         </tr>
         <tr>
-            <td>진달래</td>
-            <td>서울</td>
+            <td>진달래</td><td>서울</td>
         </tr>
         <tr>
-            <td>개나리</td>
-            <td>부산</td>
+            <td>개나리</td><td>부산</td>
         </tr>
         <tr>
-            <td>무궁화</td>
-            <td>대구</td>
+            <td>무궁화</td><td>대구</td>
         </tr>
-        </table>
-
-    
+    </table>
 </body>
 <script>
-    // $('li:lt(4)').css('font-size','24px');
-    // $('li:first').css('backgroundColor','yellow');
-    // $('li:last').css('backgroundColor','yellow');
-    // $('li:eq(5)').css('backgroundColor','red');
+    $('li:lt(4)').css('font-size','24px');
+    $('li:first').css('backgroundColor','yellow');
+    $('li:last').css('backgroundColor','yellow');
+    $('li:eq(5)').css('backgroundColor','red');
 
-    $('li:even').css('backgroundColor','pink');
-    $('li:odd').css('backgroundColor','gray');
+    // $('li:even').css('backgroundColor','pink');
+    // $('li:odd').css('backgroundColor','gray');
+    
+    $('th:lt(2)').css('backgroundColor','black').css('color','white');
+    $('tr:even').css('backgroundColor','pink');
+    $('tr').css('font-size','50px');
+    
+
+
+    
+    
         
         
         
