@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    * {
+      font-size: 32px;
+    }
+    table {
+      border-collapse: collapse;
+    }
+    table,
+    tr,
+    th {
+      border: 1px solid black;
+    }
+</style>
 <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 <body>
     <ul>
@@ -20,19 +33,19 @@
     </ul>
     <table>
         <tr>
-            <th>이름</th><th>지역</th>
+            <th>이름</th><th>주소</th>
         </tr>
         <tr>
-            <td>홍길동</td><td>대전</td>
+            <th>홍길동</th><th>대전</th>
         </tr>
         <tr>
-            <td>진달래</td><td>서울</td>
+            <th>진달래</th><th>서울</th>
         </tr>
         <tr>
-            <td>개나리</td><td>부산</td>
+            <th>개나리</th><th>부산</th>
         </tr>
         <tr>
-            <td>무궁화</td><td>대구</td>
+            <th>무궁화</th><th>대구</th>
         </tr>
     </table>
 </body>
@@ -47,7 +60,8 @@
     
     $('th:lt(2)').css('backgroundColor','black').css('color','white');
     $('tr:even').css('backgroundColor','pink');
-    $('tr').css('font-size','50px');
+    
+    
     
 
 

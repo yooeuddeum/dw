@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<style>
+     * {
+      font-size: 32px;
+    }
+    table {
+      border-collapse: collapse;
+    }
+    table,
+    tr,
+    th {
+      border: 1px solid black;
+    }
+</style>
+<body>
+    <table>
+        <tr>
+            <th>이름</th>
+            <th>주소</th>
+            <th>전화번호</th>
+        </tr>
+        <tr>
+            <th>홍길동</th>
+            <th>대전</th>
+            <th>010-222-333</th>
+        </tr>
+        <tr>
+            <th>진달래</th>
+            <th>서울</th>
+            <th>010-444-555</th>
+        </tr>
+        <tr>
+            <th>개나리</th>
+            <th>부산</th>
+            <th>010-777-888</th>
+        </tr>
+        <tr>
+            <th>무궁화</th>
+            <th>대구</th>
+            <th>010-555-999</th>
+        </tr>
+    </table>
+</body>
+<script>
+    $('th:first-child').css('backgroundColor','gray');
+    $('th:nth-child(2)').css('backgroundColor','yellow');
+    $('th:nth-child(3)').css('backgroundColor','green');
+</script>
+</html>
+    
+    
+    
