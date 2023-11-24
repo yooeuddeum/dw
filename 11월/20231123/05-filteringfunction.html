@@ -37,15 +37,15 @@
         $('#user').val(newName);
         
     })
-    $('#btnView').on('click', function (){
-        const newName1 = prompt('입력해주세요.');
-        $('#user').val(newName1);
-        $('label[for=user]');
-        $('input[type=radio]');
-        
-        
-       
-    })
+    $('#btnView').on('click', function () {
+        const newName = $('#user').val();
+        const newGender =$('[name=gend]:checked').val();
+        const newIntro = $('#textarea').val();
+        const newjob = $(':selected').val();
+
+        alert(`${newName},${newGender},${newIntro},${newjob}`);
+    });
+    
 
 
 </script>
