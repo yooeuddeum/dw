@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<style>
+    .wrapper{
+        width: 500px;
+    }
+    .wrapper *{
+        display: block;
+        border: 2px solid lightgray;
+        color: lightgray;
+        padding: 10px;
+        margin: 20px;
+    }
+    ul {
+        list-style-type: none;
+    }
+</style>
+<body>
+    <div class="wrapper">wrapper div
+        <div>div
+            <ul>ul
+                <li>li
+                    <span>span</span>
+                </li>
+            </ul>
+        </div>
+        <div>div
+            <ul>ul
+                <li>li
+                    <span>span</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    // $('.wrapper').find('span').css({
+    //     color: 'red',
+    //     border: '2px solid red',
+    // });
+
+    // $('span').parentsUntil('div').css({
+    //     color: 'red',
+    //     border: '2px solid red',
+    // });
+
+    // 1. 첫번째 div의 li에서 시작 두번째 div의 span선택
+    $($('.wrapper > div')[0]).find('li').parents('div').next().find('span').css('color', 'red');
+    // 2. 두번째 div의 span에서 시작해서 첫번째 div의 span선택
+    $('div:last-child span').parents('div').prev().find('span').css('color', 'red');
+    
+</script>
+</html>
+          
