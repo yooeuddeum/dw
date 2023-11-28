@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+   <input type="checkbox" id="chkController">
+   <label for="chkController">전체선택</label>
+   <br>
+   <input type="checkbox" id="A">
+   <label for="A">AAA</label> 
+   <input type="checkbox" id="B">
+   <label for="B">BBB</label> 
+   <input type="checkbox" id="C">
+   <label for="C">CCC</label> 
+   <input type="checkbox" id="D">
+   <label for="D">DDD</label> 
+   <input type="checkbox" id="E">
+   <label for="E">EEE</label> 
+</body>
+<script>
+    // 1. 전체선택에 매핑되어있는 input 박스(체크박스)를 가져온다.
+    $('#chkController').on('click', function(){
+        const allChk = $('#chkController');
+    // 2. 가져온 체크박스가 체크되어 있는지 확인을 한다.
+        const chk = allChk.prop('checked');
+        // console.log(chk);
+    // 3. 체크 되어있다면 아래 다섯개의 체크박스에 체크, 아니라면
+    // 아래 다섯개의 체크박스 체크 해제
+    if(chk) {
+        allChk.siblings('input').prop('checked',true);
+    }
+    else {
+        allChk.siblings('input').prop('checked',false);
+    }
+    // const chkController = $(this);
+    // const canclechk = chkController.prop('checked');
+    // $('#A,#B,#C,#D,#E').prop('checked', canclechk);
+    });
+    $('#chkController').siblings('input').on('click', function(){
+        // 1. 전체 체크박스를 가져온다.
+        const allChkboxes = $('#chkController').siblings('input');
+        // console.log(allChkboxes);
+        
+        // 2. 체크된 체크박스만 가져온다.
+        const chkboxes = allChkboxes.filter(':checked');
+        // console.log(chkboxes);
+        
+        // 3. 전체 체크박스의 개수와 체크된 체크박스의 개수를 비교해서
+        //    전체선택에 매핑되어있는 체크박스를 checked 로 만든다.
+        const allChkboxesCount = allChkboxes.length;
+        // console.log(allChkboxesCount);
+        const checkedboxesCount = chkboxes.length;
+        // console.log(checkedboxesCount);
+        $('#chkController').prop('checked', allChkboxesCount == checkedboxesCount);
+    });
+        
+        
+       
+    
+    
+
+    
+    
+    
+        
+      
+        
+        
+        
+       
+    
+        
+        
+      
+    
+   
+    
+    
+</script>
+</html>
+    
+    
+  
+    
+
