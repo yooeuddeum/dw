@@ -22,6 +22,7 @@
         background-color: pink;
     }
     p {
+
         color: purple;
         border: 3px dashed black;
         background-color: beige;
@@ -44,16 +45,24 @@
 </body>
 <script>
  $('#in').on('click', function(){
-        $('p').fadeIn();
+        $('#div1').fadeIn();
+        $('#div2').fadeIn('slow');
+        $('#div3').fadeIn(3000);
     });
  $('#out').on('click', function(){
-        $('p').fadeOut();
+        $('#div1').fadeOut();
+        $('#div2').fadeOut('slow');
+        $('#div3').fadeOut(3000);
     });
  $('#toggle').on('click', function(){
-        $('p').fadeToggle();
+        $('#div1').fadeToggle(1000);
+        $('#div2').fadeToggle(2000);
+        $('#div3').fadeToggle(3000);
     });
  $('#to').on('click', function(){
-        $('p').fadeTo();
+        $('#div1').fadeTo(1000,0.15).slideUp();
+        $('#div2').fadeTo(2000,0.4).slideUp();
+        $('#div3').fadeTo(3000,0.7).slideUp();
     });
 </script>
 </html>
