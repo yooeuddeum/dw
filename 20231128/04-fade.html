@@ -19,8 +19,17 @@
         background-color: blue;
     }
     #div3{
-        background-color: green;
+        background-color: pink;
     }
+    p {
+        color: purple;
+        border: 3px dashed black;
+        background-color: beige;
+    }
+    button {
+        cursor: pointer;
+    }
+        
 </style>
 <body>
    <p>FadeIn 버튼을 누르면 요소가 나타나고, Fadeout 버튼을 누르면 요소가 사라집니다.</p>
@@ -35,7 +44,16 @@
 </body>
 <script>
  $('#in').on('click', function(){
-        $('p').fadeIn(2000);
+        $('p').fadeIn();
+    });
+ $('#out').on('click', function(){
+        $('p').fadeOut();
+    });
+ $('#toggle').on('click', function(){
+        $('p').fadeToggle();
+    });
+ $('#to').on('click', function(){
+        $('p').fadeTo();
     });
 </script>
 </html>
