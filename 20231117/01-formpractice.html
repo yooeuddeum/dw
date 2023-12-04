@@ -55,9 +55,7 @@
       //   });
 
       // 3. 선택한 취미 가져오기
-      const checkboxArr = document.querySelectorAll(
-        "input[type=checkbox]:checked"
-      );
+      const checkboxArr = document.querySelectorAll("input[type=checkbox]:checked");
       const newArr = [];
       checkboxArr.forEach(function (el) {
         newArr.push(el.nextElementSibling.innerHTML);
