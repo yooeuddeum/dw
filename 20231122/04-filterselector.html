@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+      font-size: 32px;
+    }
+    table {
+      border-collapse: collapse;
+    }
+    table,
+    tr,
+    th {
+      border: 1px solid black;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<body>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+        <li>six</li>
+        <li>seven</li>
+        <li>eight</li>
+        <li>nine</li>
+    </ul>
+    <table>
+        <tr>
+            <th>이름</th><th>주소</th>
+        </tr>
+        <tr>
+            <th>홍길동</th><th>대전</th>
+        </tr>
+        <tr>
+            <th>진달래</th><th>서울</th>
+        </tr>
+        <tr>
+            <th>개나리</th><th>부산</th>
+        </tr>
+        <tr>
+            <th>무궁화</th><th>대구</th>
+        </tr>
+    </table>
+</body>
+<script>
+    $('li:lt(4)').css('font-size','24px');
+    $('li:first').css('backgroundColor','yellow');
+    $('li:last').css('backgroundColor','yellow');
+    $('li:eq(5)').css('backgroundColor','red');
+
+    // $('li:even').css('backgroundColor','pink');
+    // $('li:odd').css('backgroundColor','gray');
+    
+    $('th:lt(2)').css('backgroundColor','black').css('color','white');
+    $('tr:even').css('backgroundColor','pink');
+    
+    
+    
+
+
+    
+    
+        
+        
+        
+        
+
+    
+    
+</script>
+</html>

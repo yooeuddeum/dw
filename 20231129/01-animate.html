@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+<style>
+    div {
+        background-color: pink;
+        width: 300px;
+        height: 300px;
+        position: absolute;
+    }
+</style>
+<body>
+    <div>Jingburger</div>
+</body>
+<script>
+    $('div').on('click', function(){
+        // $('div').animate({left:'250px'});
+        // $('div').animate({
+        //     left:'250px',
+        //     top: '250px',
+        //     opacity: '0.3',
+        //     width: '500px',
+        //     height: "500px",
+        // });
+        $('div').animate({backgroundColor: 'yellow',height: '900px',opacity: '0.4',width:'250px',left:'270px'})
+        $('div').animate({height: '700px',opacity: '0.7',width:'450px',right:'200px',})
+        $('div').animate({height: '200px',opacity: '0.2',width:'350px',top:'350px'})
+        $('div').animate({height: '500px',opacity: '0.6',width:'150px',bottom:'350px'})
+    });
+</script>
+</html>
+        
+        
+        
+       
+        
+        
