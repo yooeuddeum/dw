@@ -303,6 +303,9 @@ setInterval : 일정 시간마다 함수를 반복해서 실행합니다.
 배열 []
 
 
+background-color: transparent; 투명색 설정
+
+
 
 
 
