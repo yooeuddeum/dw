@@ -305,6 +305,8 @@ setInterval : 일정 시간마다 함수를 반복해서 실행합니다.
 
 background-color: transparent; 투명색 설정
 
+width: fit-content; 설정한 값만 컨텐츠 범위를 잡는것
+
 
 
 
