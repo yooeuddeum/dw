@@ -189,6 +189,71 @@ section {
     align-items: center;
 }
 
+.chart-changes {
+    font-size: 14px;
+    color: gray;
+}
+
+.chart-changes.up {
+    color: red;
+}
+
+.chart-title {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.chart-artist {
+    font-weight: 500;
+    font-size: 24px;
+    color: #868686;
+}
+
+@media screen and (max-width: 650px){
+    .playlist {
+        flex-basis: 30%;
+    }
+    .chart-cover {
+        width: 130px;
+        height: 130px;
+    }
+    .chart-title {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .chart-artist {
+        font-size: 25px;
+    }
+    .artist-name {
+        font-size: 17px;
+        margin: 15px 0 0;
+    }
+    .stations {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+    .playlists {
+        display: flex;
+        gap: 32px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .playlist {
+        width: 100%;
+        flex-basis: 47%;
+    }
+    .playlist-title {
+        font-weight: 700;
+        font-size: 22px;
+        margin: 16px 0 8px;
+    }
+    
+}
+
+
+
+
 
 
 
