@@ -294,8 +294,7 @@ section {
   color: #8c8993;
 }
 
-.info,
-.time {
+.info,.time {
   flex-basis: 300px;
 }
 
