@@ -9,9 +9,48 @@ html {
 }
 
 body {
-  margin: 0;
   background-color: #000;
   color: #d9d9d9;
+  margin: 0;
+}
+
+.sidebar {
+  padding: 16px;
+  background-color: #161519;
+  color: #8c8993;
+  width: 240px;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+}
+
+.menu-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 48px;
+}
+
+.menu-item {
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.menu-item:hover {
+  cursor: pointer;
+}
+
+.menu-item.active {
+  background-color: rgba(205, 187, 255, 0.1);
+  color: #ffffff;
+}
+
+main {
+  margin-left: 240px;
+  margin-bottom: 130px;
 }
 
 section {
@@ -206,47 +245,67 @@ section {
   color: #868686;
 }
 
-@media screen and (max-width: 780px) {
-  .playlist {
-    flex-basis: 30%;
-  }
-
-  .chart-cover {
-    width: 130px;
-    height: 130px;
-  }
-
-  .chart-title {
-    font-size: 25px;
-    font-weight: 500;
-  }
-
-  .artist-name {
-    font-size: 17px;
-    margin: 15px 0 0;
-  }
-
-  .stations {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.progress-bar {
+  height: 6px;
+  background-color: #4d4d54;
 }
 
-@media screen and (max-width: 650px) {
-  .playlist {
-    flex-basis: 45%;
-  }
+.progress {
+  background-color: #7000ff;
+  width: 70%;
+  height: 100%;
+}
 
-  .chart-title {
-    font-size: 18px;
-  }
+.player {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
 
-  .chart-number {
-    width: 30px;
-    height: 30px;
-    font-size: 15px;
-  }
+.player-main {
+  background-color: rgba(48, 48, 55, 0.7);
+  display: flex;
+  flex: 1 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px;
+  backdrop-filter: blur(15px);
+}
 
-  .chart-change {
-    font-size: 12px;
-  }
+.info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.current {
+  border-radius: 14px;
+}
+
+.title {
+  color: #d9d9d9;
+}
+
+.artist {
+  color: #8c8993;
+}
+
+.info,
+.time {
+  flex-basis: 300px;
+}
+
+.time {
+  text-align: right;
+  color: #8c8993;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
