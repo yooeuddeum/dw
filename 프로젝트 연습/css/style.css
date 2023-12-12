@@ -1,14 +1,14 @@
 
 :root {
-    --accent-color: #f3ff87;
+    --accent-color: #f5d2f5f4;
     --text-color: #f0f4f5;
     --background-color: #0b002b;
 }
 
 body {
     margin: 0;
-   
 }
+
 a {
     text-decoration: none;
     color: var(--text-color);
@@ -72,3 +72,5 @@ a {
     right: 32px;
     font-size: 24px;
 }
+    
+   
