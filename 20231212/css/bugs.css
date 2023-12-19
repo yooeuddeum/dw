@@ -149,6 +149,10 @@ header .head-wrap-sub ul li a:hover{
     color:var( --color-font-green);
 }
 
+.head-logo {
+    cursor: pointer;
+}
+
 .visual {
     margin-top: 120px;
     background-image: url(/20231212/img/visual_bg.jpg);
@@ -387,14 +391,76 @@ section {
 .nav {
     font-size: 36px;
     display: flex;
-    justify-content: center;
+    justify-content: center;  
     align-items: center;
     padding: 5px;
     margin: 5px;
     cursor: pointer;
 }
-    
 
+.rewards {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.rewards .rew-left {
+    width: 50%;
+    height: 100%;
+    background-color: #272727;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.rewards .rew-right {
+    width: 50%;
+    height: 100%;
+    background-color: #d5c798;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.rewards .rew {
+    background-image: url(/20231212/img/rewards.jpg);
+    height: 241px;
+}
+
+.rew {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.rewards .btn-group {
+    position: absolute;
+    right: 0;
+    bottom: 24px;
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rewards .btn.sign {
+    margin-right: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}
+.rewards .btn.login {
+    width: 110px;
+    border-radius: 8px;
+}
+.rewards .btn.gift {
+    flex: 1;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+
+    
+  
     
     
 
