@@ -18,7 +18,7 @@
 header{
     border-bottom: 1px solid gray;
     background: var(--color-beige);
-    position: fixed;
+    position: relative;
     top: 0;
     width: 100%;
     display: flex;
@@ -28,7 +28,7 @@ header{
 }
 header .head-wrap .head-wrap-inner .search-btn{
     position: absolute;
-    top:10px;
+    top: 10px;
     right: 40px;
     background: white;
     border: solid 1px gray;
@@ -153,11 +153,15 @@ header .head-wrap-sub ul li a:hover{
     cursor: pointer;
 }
 
+.search-btn {
+    cursor: pointer;
+}
+
 .visual {
-    margin-top: 120px;
     background-image: url(/20231212/img/visual_bg.jpg);
     background-position: center;
 }
+    
 
 section {
     display: block;
@@ -349,6 +353,7 @@ section {
     margin-right: auto;
     overflow: hidden;
     list-style: none;
+    margin-top: 10px;
     padding: 0;
     z-index: 1;
 }
@@ -378,7 +383,7 @@ section {
     justify-content: center;
     align-items: center;
     border: 2px solid black;
-    border-radius: 4px;
+    border-radius: 8px;
     box-sizing: border-box;
     width: 150px;
     height: 50px;
@@ -393,8 +398,8 @@ section {
     display: flex;
     justify-content: center;  
     align-items: center;
-    padding: 5px;
-    margin: 5px;
+    padding: 0px;
+    margin: 0px;
     cursor: pointer;
 }
 
@@ -457,6 +462,161 @@ section {
     margin-top: 10px;
     border-radius: 8px;
 }
+
+.video {
+    position: relative;
+    height: 700px;
+    background-color: #333;
+    overflow: hidden;
+}
+
+.video .video-area {
+    width: 1920px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+    
+    
+
+.video .video-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.video .inner {
+    height: inherit;
+}
+
+.video .floating1 {
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+.video .floating2 {
+    position: absolute;
+    top: 350px;
+    left: 170px;
+}
+
+.season {
+    background-image: url(/20231212/img/season_product_bg.jpg);
+}
+
+.season .inner {
+    height: 400px;
+}
+
+.season .floating3 {
+    position: absolute;
+    top: -200px;
+    right: 0;
+}
+
+.season .texts .title {
+    position: absolute;
+    top: 110px;
+    right: 326px;
+}
+
+.season .texts .title1 {
+    position: absolute;
+    top: 180px;
+    right: 100px;
+}
+
+.season .texts .style {
+    position: absolute;
+    top: 240px;
+    right: 435px;
+}
+
+.coffee {
+    background-image: url(/20231212/img/reserve_bg.jpg);
+}
+
+.coffee .inner {
+    height: 400px;
+}
+
+.coffee .logo {
+    position: absolute;
+    top: 110px;
+    left: 0;
+}
+
+.coffee .texts {
+    position: absolute;
+    top: 124px;
+    left: 208px;
+}
+
+.coffee .image {
+    position: absolute;
+    top: 0;
+    left: 60%;
+}
+
+.btn-color {
+    color: #D9AA8A;
+    border-color: #D9AA8A;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.pick {
+    background-image: url(/20231212/img/favorite_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.pick .inner {
+    padding: 110px 0;
+}
+
+
+
+
+.pick .texts {
+    width: 362px;
+    margin-left: 132px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.pick .texts .title {
+    margin-bottom: 40px;
+}
+
+.pick .texts .row {
+    color: #DFCFBE;
+    margin-top: 30px;
+    border: 2px solid #DFCFBE;
+    font-weight: 700;
+    width: 40%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    opacity: 0.8;
+}
+    
+    
+
+
+
+
+
+    
 
 
     
