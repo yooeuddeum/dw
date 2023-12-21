@@ -388,7 +388,7 @@ section {
     width: 150px;
     height: 50px;
     margin-left: 46%;
-    margin-top: 10px;
+    top: 8px;
     cursor: pointer;
 }
     
@@ -582,8 +582,6 @@ section {
 }
 
 
-
-
 .pick .texts {
     width: 362px;
     margin-left: 132px;
@@ -609,6 +607,148 @@ section {
     border-radius: 8px;
     opacity: 0.8;
 }
+
+.reserve-store {
+    background-image: url(/20231212/img/reserve_store_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.reserve-store .inner {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.reserve-store .medal {
+    width: 334px;
+    height: 334px;
+    perspective: 600px;
+}
+
+
+.reserve-store .medal .back .btn {
+    position: absolute;
+    top: 310px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-decoration: none;
+    border-color: #f6f5ee;
+    color: #f6f5ee;
+    border-radius: 8px;
+}
+    
+
+.find-store {
+    background-image: url(/20231212/img/find_store_bg.jpg);
+}
+
+.find-store .inner {
+    height: 400px;
+}
+
+.find-store .store1 {
+    position: absolute;
+    top: 0;
+    left: 37%;
+} 
+
+.find-store .store2 {
+    position: absolute;
+    bottom: 0;
+    left: 80%;
+}
+
+.find-store .store3 {
+    border-radius: 50%;
+    position: absolute;
+    top: -70px;
+}
+
+.find-store .store4 {
+    border-radius: 50%;
+    position: absolute;
+    top: 140px;
+    left: 250px;
+}
+
+.find-store .texts .store5 {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+}
+
+.find-store .texts .store6 {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+}
+
+.find-store .texts .btn {
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    text-decoration: none;
+}
+
+.award {
+    background-color: #272727;
+    height: 120px;
+}
+
+.award .inner {
+    padding: 40px 0;
+}
+
+.award .inner .award-main {
+    color: #d08770;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.award .inner .award-left .img {
+    position: absolute;
+    top: 20%;
+}
+    
+.award .inner .award-right .img {
+    position: absolute;
+    top: 20%;
+    left: 100%;
+    color: #d5c798;
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #d5c798;
+    text-align: center;
+    border-radius: 50%;
+}
+
+
+    
+
+    
+
+
+
+    
+    
+
+
+
+
+
+
+
     
     
 
