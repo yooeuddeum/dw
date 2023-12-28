@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+    
+
+body {
+    background-image: url(/데모사이트/img/art-226342.jpg);
+}
+    
+    
+a {
+    color: black; 
+    text-decoration: none;
+}
+
+.icon {
+    position: absolute;
+    right: 90%;
+    bottom: 86%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+    
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 10em;
+}
+
+
+    
+    
+.menubar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.menubar ul li {
+    margin: 25px;
+    padding: 25px;
+}
+
+
+.menubar ul li a {
+    color: #b39ddb;
+}
+
+
+.signButton > button {
+    margin: 15px;
+    width: 60px;
+    height: 30px;
+    padding: 0;
+    border: 0;
+    border-radius: 5px;
+    background-color: #b39ddb;
+}
+.signButton > button:hover {
+    background-color: #e6ceff;
+}
+
+.main {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+}
+.main *{
+    margin-bottom: 20px;
+}
+
+.left {
+    width: 20%;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.text {
+    width: 70%;
+    font-weight: 700;
+}
+.text .text1 {
+    margin-top: 100px;
+}
+
+.text2 {
+    position: absolute;
+    left: 38%;
+    top: 18%;
+    font-weight: 700;
+}
+
+.text3 {
+    position: absolute;
+    left: 38%;
+    top: 44%;
+    font-weight: 700;
+}
+
+.text h5 {
+    color: #ae52d4;
+}
+.text h2 {
+    color: #e7b9ff;
+    font-size: 24px;
+}
+
+.main button {
+    margin: 10px;
+    width: 100px;
+    height: 45px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #b39ddb;
+}
+.main button:hover {
+    background-color: #e6ceff;
+}
+
+.findButton {
+    position: absolute;
+    left: 35%;
+    top: 80%;
+
+}
+
+
+.right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.right .img1 {
+    border-radius: 50%;
+}
+
+.right .img2 {
+    border-radius: 50%;
+    position: absolute;
+    bottom: 30%;
+}
+
+.right .img3 {
+    border-radius: 50%;
+    position: relative;
+    left: 80%;
+    bottom: 34%;
+}
+
+
+.right .img4 {
+    border-radius: 50%;
+    position: relative;
+    left: 80%;
+    bottom: 31%;
+}
+   
+    
+
+    
+    
+
+
+
+
+
+    
+   
+   
+
+
+
+    
+
+    
+
+
