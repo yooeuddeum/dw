@@ -4,9 +4,13 @@
 }
     
 
-body {
-    background-image: url(/데모사이트/img/art-226342.jpg);
+body,div {
+    background-color: black;
+    margin: 0;
+    padding: 0;
 }
+
+
     
     
 a {
