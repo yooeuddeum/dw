@@ -131,7 +131,7 @@ iframe {
     position: absolute;
     width: 50%;
     height: 50%;
-    border: 1px solid gold;
+    border: 1px solid;
     overflow: hidden;
     padding: auto;
 }
