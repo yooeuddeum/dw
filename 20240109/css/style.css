@@ -79,8 +79,9 @@
 .movie_title ul {overflow: hidden; width: 848px; margin: 0 auto;}
 .movie_title li {float: left; width: 200px; text-align: center; border: 2pt solid #D2C29D; margin-right: -1px; border-radius: 8px; padding: 1px;}
 .movie_title li a {display: block; padding: 15px 0; font-size: 18px; color: #666; font-weight: 700; margin: 1px;}
+.movie_title li.active {transition: all 0.7s ease-out;background: linear-gradient(270deg, rgba(223,190,106,0.8), rgba(146,111,52,0.8), rgba(34,34,34,0), rgba(34,34,34,0));background: transparent;text-transform: uppercase;font-style: normal;transition: all 0.7s ease-out;}
 .movie_title li.active a {background: #b5b69c66; color: #fff; font-weight: 700;}
-.movie_title li.active a:hover {background: rgba(255, 232, 204, 0.2)}
+.movie_title li.active a:hover {background: rgba(255, 232, 204, 0.2); background-position: 99% 50%;}
 .movie_chart {overflow: hidden; height: 592px;}
 .movie_chart > div > div > div {float: left; width: 292px; height: 592px; margin-right: 18px;}
 .movie_chart > div > div > div:last-child {margin-right: 0;}
@@ -307,7 +308,9 @@ body.modal_on {overflow: hidden;}
     .movie_title li a {position: relative; font-size: 18px; color: #666; font-weight: 400; padding: 0; margin-right: 35px;}
     .movie_title li.active a:before {content: ''; position: absolute; z-index: 10000; left: 0; bottom: -10px; width: 100%; height: 2px; background: #666;}
     .movie_title li.active a {background: none; color: #666;}
-    
+
+
+
     #event .row {padding: 0 24px;}
     .event {padding: 24px; background: #fff;}
     .event h2 {font-size: 24px; font-weight: 700; height: 27px;  margin-bottom: 20px; padding-bottom: 10px;}
