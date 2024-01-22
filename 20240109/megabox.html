@@ -918,6 +918,61 @@
     </section>
     <!-- //opening -->
     
+<<<<<<< HEAD
+    <!-- 자바스크립트 라이브러리 -->
+    <script src="JS/jquery.min_1.12.4.js"></script>
+    <script src="JS/modernizr-custom.js"></script>
+    <script src="JS/ie-checker.js"></script>
+    <script src="JS/swiper.min.js"></script>
+    <script>
+        //배너 이미지 슬라이드
+        let mySwiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+            autoplay: {
+                delay: 3000,
+            },
+        });
+        
+        //영화차트 이미지 슬라이드
+        let mySwiper2 = new Swiper('.swiper-container2', {
+            slidesPerView: 4,
+            spaceBetween: 24,
+           mousewheel: {
+               invert: true,
+           },
+            keyboard: {
+                enabled: true,
+                onlyInViewport: false,
+            },
+            autoplay: {
+                delay: 2000,
+            },
+        });
+        
+        //영화차트 탭 메뉴
+        let movBtn = $(".movie_title > ul > li");
+        let movCont = $(".movie_chart > div");
+        
+        movCont.hide().eq(0).show();
+        
+        movBtn.click(function(e){
+            e.preventDefault();
+            let target = $(this);
+            let index = target.index();
+            movBtn.removeClass("active");
+            target.addClass("active");
+            movCont.css("display","none");
+            movCont.eq(index).css("display","block");
+        });
+</script>
+=======
     <!-- new -->
     <section id="new">
         <div class="container">
@@ -1589,6 +1644,7 @@
  <script src="JS/iframe_api.js"></script>
  <script src="JS/movie.js"></script>
  <script src="JS/slide.js"></script>
+>>>>>>> 7c30c86bc6ea1c2e09827b70b7ce45541a191a3d
 </body>
 </html>
 
