@@ -5,6 +5,7 @@ body {
   height: 100vh;
   width: 100vw;
 }
+
 body {
   font-family: 'Montserrat', sans-serif;
   background: #fff;
@@ -83,6 +84,8 @@ body {
   line-height: 40px;
   opacity: 0;
   overflow: hidden;
+  font-size: 32px;
+  color: white;
 }
 .text::after {
   z-index: -1;
@@ -174,16 +177,6 @@ body {
   -webkit-animation: text-after-animation7 2s ease-in-out 3s 1 normal forwards;
           animation: text-after-animation7 2s ease-in-out 3s 1 normal forwards;
 }
-.text8 {
-  left: 180px;
-  top: 0;
-  -webkit-animation: text-animation8 1s ease-in-out 2.6s 1 normal forwards, text2-animation8 2s ease-in-out 5s 1 normal forwards;
-          animation: text-animation8 1s ease-in-out 2.6s 1 normal forwards, text2-animation8 2s ease-in-out 5s 1 normal forwards;
-}
-.text8::after {
-  -webkit-animation: text-after-animation8 2s ease-in-out 3s 1 normal forwards;
-          animation: text-after-animation8 2s ease-in-out 3s 1 normal forwards;
-}
 
 
 HTML SCSSResult Skip Results Iframe
@@ -206,7 +199,7 @@ min-height: 100vh;
 
 
 .test {
-  background: white;
+  background: whitesmoke;
   display: inline-block;
   padding: 2em;
   font-family: Helvetica Neue;
@@ -214,7 +207,11 @@ min-height: 100vh;
   position: relative;
   color: #231f20;
   font-weight: 700;
-  top: 30%;
+  opacity: 0.2;
+  top: 65%;
+  width: 45%;
+  height: 5%;
+  cursor: pointer;
   &:before {animation: sparkle 5s infinite linear;
   background: linear-gradient(90deg,yellow 0%,blue 11%,green 22%,red 33%,black 44%,pink 55%,rgb(41, 117, 161) 66%,orange 77%,rgb(184, 19, 199) 88%,rgb(50, 77, 56) 100%);
   background-size: 300% 100%;
@@ -230,9 +227,19 @@ min-height: 100vh;
   transform: scale(0.99) translateY(6px);
 }  
 }
+  
 
 .test a {
   text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+}
+
+
+
+.col p {
+  font-size: 32px;
+  color: #fff;
 }
 @-webkit-keyframes text-animation0 {
   0% {
